@@ -1,0 +1,212 @@
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: url("register_background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.auth-form-container, .register-form, .login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container {
+  background-color: #ffffffa3;
+}
+
+@media screen and (min-width: 600px){
+  .auth-form-container {
+  padding: 15px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin: 5px;
+}
+}
+
+label {
+  font-weight: bold;
+  text-align: left;
+  padding: 0.25rem 0;
+  color: #efefef;
+
+}
+
+label > input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+button {
+  border: none;
+  background-color: rgb(31, 108, 153);
+  color: #efefef;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.link-btn {
+  background: none;
+  color: #efefef;
+  text-decoration: none;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.register-form {
+  color:white;
+}
+
+.css-efvcc7-MuiPaper-root-MuiAlert-root {
+  position: absolute;
+  top: 5px;
+}
+
+/* ------------DASHBOARD--------------- */
+
+.dashboard-container {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: 4rem auto;
+}
+
+aside {
+  height: 100vh;
+}
+
+aside .top {
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100vw;
+}
+
+aside .top .menu{
+  margin-left: 0.3vw;
+}
+
+aside .top .menu a{
+  color: #fff;
+}
+
+aside .close {
+  display: none;
+}
+
+aside .sidebar {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: 92vh;
+  position: relative;
+  padding-top: 1rem;
+  border-top: 0.5px solid #fff;
+}
+
+aside .sidebar a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+}
+
+main {
+  margin: 5vw;
+}
+main .insights {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content: space-between;
+}
+
+main .header-text p {
+  text-align: start;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+main .header-text p:first-child {
+  font-size: 4rem;
+}
+
+main .header-text p:last-child {
+  font-size: 2rem;
+}
+
+.expenses, .activities, .tasks {
+  width: 14vw;
+  height: 26vh;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  color: #fff;
+}
+
+.expenses {
+  background-image: linear-gradient(to right bottom, rgba(73, 103, 237, 0.35), rgba(1, 16, 87, 0.35)), url("blue.jpg");
+}
+
+.activities {
+  background-image: linear-gradient(to right bottom, rgba(157, 248, 164, 0.35), rgba(30, 97, 24, 0.35)), url("blue.jpg");
+}
+
+.tasks {
+  background-image: linear-gradient(to right bottom, rgba(240, 0, 0, 0.35), rgba(75, 0, 0, 0.35)), url("blue.jpg");
+}
+
+.expenses h1, .activities h1, .tasks h1 {
+  font-size: 3.2rem;
+}
+
+.expenses h2, .activities h2, .tasks h2 {
+  font-size: 1.2rem;
+}
+
+/* ------------EXPENSES--------------- */
+
+.expenses-form-container {
+  background-color: #ffffffa3;
+  padding: 15px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin: 5px;
+  /* max-width: 300px; */
+  margin: auto;
+}
+
+.expenses-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  margin-left: 10px;
+}

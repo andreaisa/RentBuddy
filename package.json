@@ -1,0 +1,31 @@
+{
+  "name": "rentbudy",
+  "version": "1.0.0",
+  "description": "rentbudy app",
+  "scripts": {
+    "api": "cd Backend && npm run development",
+    "front": "cd Frontend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run api\" \"npm run front\" "
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akovacspentalog/PracticaPregatIT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akovacspentalog/PracticaPregatIT/issues"
+  },
+  "homepage": "https://github.com/akovacspentalog/PracticaPregatIT#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.16",
+    "react-router-dom": "^6.4.4",
+    "react-script": "^2.0.5"
+  }
+}
